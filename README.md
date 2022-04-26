@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Theprogrammingprince
-- 👀 I’m interested in web development front end 
+- 👀 I’m interested in web development front end and back end
 - 🌱 I’m currently learning javascript
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me __iam.paul

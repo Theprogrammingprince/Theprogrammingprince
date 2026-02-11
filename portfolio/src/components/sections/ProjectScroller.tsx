@@ -8,10 +8,24 @@ import { ProjectCard } from "../ProjectCard";
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
-    { title: "NEXUS INTERFACE", category: "WEB DESIGN / ARCHITECTURE", image: "" },
-    { title: "GLOW PROTOCOL", category: "BRAND IDENTITY / MOTION", image: "" },
-    { title: "KINETIC ENGINE", category: "FRONTEND ENGINEERING", image: "" },
-    { title: "AETHER SYSTEM", category: "UI/UX DESIGN", image: "" },
+    {
+        title: "THESIS PEN",
+        category: "ACADEMIC WRITING & RESEARCH / SaaS",
+        image: "/thesispen.jpg",
+        link: "https://thesispen.com"
+    },
+    {
+        title: "NEXA EDU",
+        category: "EDTECH SOLUTIONS / LEARNING MANAGEMENT",
+        image: "/nexa.jpg",
+        link: "https://nexaedu.ng"
+    },
+    {
+        title: "HEALTH CHAIN",
+        category: "HEALTHCARE BLOCKCHAIN / WEB3 INFRASTRUCTURE",
+        image: "/healthchain.jpg",
+        link: "https://healthchainofficial.com"
+    },
 ];
 
 export function ProjectScroller() {

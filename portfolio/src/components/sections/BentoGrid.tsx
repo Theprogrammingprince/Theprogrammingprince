@@ -22,7 +22,7 @@ export function BentoGrid() {
                     className="mb-16"
                 >
                     <h2 className="text-4xl md:text-6xl font-serif font-bold text-cloud mb-4">EXPERIENCE MATRIX</h2>
-                    <p className="text-foreground/60 font-mono text-sm tracking-widest uppercase">The architectural foundation of 20+ years.</p>
+                    <p className="text-foreground/60 font-mono text-sm tracking-widest uppercase">The architectural foundation of 5+ years.</p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px]">

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { TypedText } from "../ui/TypedText";
+import { DecryptedRoles } from "../ui/DecryptedRoles";
 import { OrbitingTechStack } from "../ui/OrbitingTechStack";
 import { MagneticButton } from "../ui/MagneticButton";
 import { Download, ArrowRight } from "lucide-react";
@@ -55,7 +55,7 @@ export function Hero() {
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 1.5, delay: 0.2 }}
-                            className="text-[12vw] font-serif font-black text-white/10 tracking-tighter whitespace-nowrap leading-none"
+                            className="text-[14vw] font-heading font-black text-white/10 tracking-tighter whitespace-nowrap leading-none uppercase"
                         >
                             PAUL PRINCE
                         </motion.h1>
@@ -70,7 +70,7 @@ export function Hero() {
                                 initial={{ opacity: 0, x: -30 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.8, delay: 0.4 }}
-                                className="text-2xl md:text-3xl font-sans text-cloud/60 mb-2"
+                                className="text-xl md:text-2xl font-sans text-cloud/70 mb-2 font-medium"
                             >
                                 Hey, I am
                             </motion.h2>
@@ -78,15 +78,15 @@ export function Hero() {
                                 initial={{ opacity: 0, x: -30 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.8, delay: 0.6 }}
-                                className="text-5xl md:text-8xl lg:text-9xl font-serif font-black text-cloud tracking-tighter mb-4 drop-shadow-2xl"
+                                className="text-6xl md:text-8xl lg:text-9xl font-heading font-black text-cloud tracking-tight mb-4 drop-shadow-2xl uppercase"
                             >
                                 PAUL PRINCE
                             </motion.h1>
 
                             <div className="h-24 md:h-32 mb-8">
-                                <span className="text-xl md:text-2xl font-mono text-cloud/80 block mb-2">A</span>
-                                <div className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold italic text-accent-blue">
-                                    <TypedText texts={roles} />
+                                <span className="text-lg md:text-xl font-mono text-cloud/60 block mb-2 tracking-widest uppercase font-bold">A</span>
+                                <div className="text-3xl md:text-5xl lg:text-6xl font-heading font-extrabold italic text-accent-blue tracking-tight">
+                                    <DecryptedRoles roles={roles} />
                                 </div>
                             </div>
 

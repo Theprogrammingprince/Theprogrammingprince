@@ -59,7 +59,7 @@ export function OrbitingTechStack() {
                 transition={{ duration: 1.5, ease: "easeOut" }}
                 onMouseEnter={() => setIsCenterHovered(true)}
                 onMouseLeave={() => setIsCenterHovered(false)}
-                className="relative z-20 w-64 h-64 md:w-[500px] md:h-[500px] rounded-full border-4 border-accent-blue/40 overflow-hidden bg-charcoal-light shadow-[0_0_100px_rgba(59,130,246,0.6)] group cursor-pointer"
+                className="relative z-20 w-64 h-64 md:w-[500px] md:h-[500px] rounded-full border-4 border-accent-gold/40 overflow-hidden bg-charcoal-light shadow-[0_0_100px_rgba(226,184,83,0.6)] group cursor-pointer"
             >
                 <motion.div
                     className="w-full h-full relative"
@@ -76,7 +76,7 @@ export function OrbitingTechStack() {
                     />
                 </motion.div>
                 {/* Glow overlay */}
-                <div className="absolute inset-0 bg-accent-blue/10 mix-blend-overlay pointer-events-none group-hover:bg-transparent transition-colors duration-700" />
+                <div className="absolute inset-0 bg-accent-gold/10 mix-blend-overlay pointer-events-none group-hover:bg-transparent transition-colors duration-700" />
             </motion.div>
 
             {/* Orbit Rings (Decorative - Scaled for the 500px central Sun) */}

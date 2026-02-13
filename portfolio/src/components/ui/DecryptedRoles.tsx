@@ -29,9 +29,9 @@ export function DecryptedRoles({
                 maxIterations={15}
                 sequential={true}
                 revealDirection="center"
-                className="text-accent-blue"
-                parentClassName="text-accent-blue"
-                encryptedClassName="text-accent-blue/40"
+                className="text-ivory"
+                parentClassName="text-ivory"
+                encryptedClassName="text-ivory/60"
                 animateOn="hover"
             />
         </div>

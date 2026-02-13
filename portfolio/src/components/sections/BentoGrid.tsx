@@ -41,23 +41,23 @@ export function BentoGrid() {
                                 } ${index === 4 ? "md:col-span-2" : ""}`}
                         >
                             {/* Inner glow effect */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            <div className="absolute inset-0 bg-gradient-to-br from-accent-gold/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                             <div className="relative z-10">
-                                <span className="text-xs font-mono text-accent-blue/60 uppercase tracking-widest">{skill.category}</span>
+                                <span className="text-xs font-mono text-accent-gold/60 uppercase tracking-widest">{skill.category}</span>
                                 <h3 className="text-2xl md:text-3xl font-serif text-cloud mt-2">{skill.name}</h3>
                             </div>
 
                             <div className="relative z-10 flex justify-between items-end">
-                                <span className="text-4xl md:text-5xl font-serif font-black text-cloud/10 group-hover:text-accent-blue/40 transition-colors duration-500">
+                                <span className="text-4xl md:text-5xl font-serif font-black text-cloud/10 group-hover:text-accent-gold/40 transition-colors duration-500">
                                     {skill.level}
                                 </span>
-                                <div className="h-2 w-2 rounded-full bg-accent-blue animate-pulse" />
+                                <div className="h-2 w-2 rounded-full bg-accent-gold animate-pulse" />
                             </div>
 
                             {/* Decorative corner lines */}
-                            <div className="absolute top-0 right-0 w-8 h-8 border-t border-r border-accent-blue/20 group-hover:border-accent-blue/60 transition-colors" />
-                            <div className="absolute bottom-0 left-0 w-8 h-8 border-b border-l border-accent-blue/20 group-hover:border-accent-blue/60 transition-colors" />
+                            <div className="absolute top-0 right-0 w-8 h-8 border-t border-r border-accent-gold/20 group-hover:border-accent-gold/60 transition-colors" />
+                            <div className="absolute bottom-0 left-0 w-8 h-8 border-b border-l border-accent-gold/20 group-hover:border-accent-gold/60 transition-colors" />
                         </motion.div>
                     ))}
                 </div>

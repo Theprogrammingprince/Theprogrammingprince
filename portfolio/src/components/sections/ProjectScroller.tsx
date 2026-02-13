@@ -93,8 +93,8 @@ export function ProjectScroller() {
             </div>
 
             <div className="absolute bottom-24 left-24 z-10 flex space-x-4 overflow-hidden">
-                <div className="h-[1px] w-24 bg-accent-blue/30 self-center" />
-                <span className="text-xs font-mono text-accent-blue/50 tracking-widest">DRAG OR SCROLL TO EXPLORE</span>
+                <div className="h-[1px] w-24 bg-accent-gold/30 self-center" />
+                <span className="text-xs font-mono text-accent-gold/50 tracking-widest">DRAG OR SCROLL TO EXPLORE</span>
             </div>
         </section>
     );

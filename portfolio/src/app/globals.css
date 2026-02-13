@@ -19,25 +19,25 @@
   --color-card-foreground: #f8fafc;
   --color-popover: #0a0a0b;
   --color-popover-foreground: #f8fafc;
-  --color-primary: #3b82f6;
-  --color-primary-foreground: #ffffff;
+  --color-primary: #E2B853;
+  --color-primary-foreground: #0a0a0b;
   --color-secondary: #1e293b;
   --color-secondary-foreground: #f8fafc;
   --color-muted: #1e293b;
   --color-muted-foreground: #94a3b8;
-  --color-accent: #3b82f6;
-  --color-accent-foreground: #ffffff;
+  --color-accent: #E2B853;
+  --color-accent-foreground: #0a0a0b;
   --color-destructive: #ef4444;
   --color-border: rgba(255, 255, 255, 0.1);
   --color-input: rgba(255, 255, 255, 0.1);
-  --color-ring: #3b82f6;
+  --color-ring: #E2B853;
 
   /* Custom Theme Colors */
   --color-charcoal-dark: #0a0a0b;
   --color-charcoal-light: #161617;
-  --color-accent-blue: #3b82f6;
+  --color-accent-gold: #E2B853;
   --color-cloud: #f8fafc;
-  --color-neo-deco-glow: radial-gradient(circle at center, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+  --color-neo-deco-glow: radial-gradient(circle at center, rgba(226, 184, 83, 0.15) 0%, transparent 70%);
 }
 
 @layer base {
@@ -48,18 +48,18 @@
     --card-foreground: #f8fafc;
     --popover: #0a0a0b;
     --popover-foreground: #f8fafc;
-    --primary: #3b82f6;
-    --primary-foreground: #ffffff;
+    --primary: #E2B853;
+    --primary-foreground: #0a0a0b;
     --secondary: #1e293b;
     --secondary-foreground: #f8fafc;
     --muted: #1e293b;
     --muted-foreground: #94a3b8;
-    --accent: #3b82f6;
-    --accent-foreground: #ffffff;
+    --accent: #E2B853;
+    --accent-foreground: #0a0a0b;
     --destructive: oklch(0.577 0.245 27.325);
     --border: rgba(255, 255, 255, 0.1);
     --input: rgba(255, 255, 255, 0.1);
-    --ring: #3b82f6;
+    --ring: #E2B853;
   }
 
   .dark {

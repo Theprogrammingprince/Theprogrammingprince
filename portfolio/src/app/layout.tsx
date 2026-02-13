@@ -22,6 +22,8 @@ export const metadata: Metadata = {
   description: "High-performance professional portfolio with Neo-Deco aesthetics.",
 };
 
+import ShootingStarEffect from "@/components/ui/ShootingStarEffect";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -32,6 +34,7 @@ export default function RootLayout({
       <body
         className={`${outfit.variable} ${spaceGrotesk.variable} ${syne.variable} antialiased font-sans bg-background text-foreground`}
       >
+        <ShootingStarEffect />
         {children}
       </body>
     </html>

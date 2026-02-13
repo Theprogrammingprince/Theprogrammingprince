@@ -54,11 +54,11 @@ export function TypedText({
 
     return (
         <span className="relative">
-            <span className="text-accent-blue">{displayText}</span>
+            <span className="text-accent-gold">{displayText}</span>
             <motion.span
                 animate={{ opacity: [1, 0] }}
                 transition={{ duration: 0.5, repeat: Infinity, repeatType: "reverse" }}
-                className="inline-block w-1 h-8 md:h-12 bg-accent-blue ml-1 align-middle"
+                className="inline-block w-1 h-8 md:h-12 bg-accent-gold ml-1 align-middle"
             />
         </span>
     );

@@ -26,6 +26,12 @@ const projects = [
         image: "/healthchain.jpg",
         link: "https://healthchainofficial.com"
     },
+    {
+        title: "HARZOCK HOTEL",
+        category: "HOTEL MANAGEMENT SYSTEM",
+        image: "/harzock.jpg",
+        link: "https://herzokhotel.vercel.app"
+    },
 ];
 
 export function ProjectScroller() {

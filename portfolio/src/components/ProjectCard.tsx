@@ -70,13 +70,13 @@ export function ProjectCard({ title, category, description, tech = [], image, in
                             initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.3 }}
-                            className="text-3xl md:text-5xl font-serif font-black tracking-tight"
+                            className="text-2xl md:text-4xl font-serif font-bold tracking-tight"
                         >
                             {title}
                         </motion.h3>
 
                         {description && (
-                            <p className="text-sm md:text-base text-cloud/80 font-sans mt-3 max-w-2xl line-clamp-2 leading-relaxed">
+                            <p className="text-xs md:text-sm text-cloud/75 font-sans mt-2 max-w-xl line-clamp-2 leading-relaxed">
                                 {description}
                             </p>
                         )}

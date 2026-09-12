@@ -98,7 +98,7 @@ export function ProjectScroller() {
     return (
         <section ref={containerRef} id="projects" className="relative h-screen overflow-hidden bg-charcoal-default">
             <div className="absolute top-24 left-24 z-10">
-                <h2 className="text-4xl md:text-6xl font-serif font-black text-cloud/20 tracking-tighter">PORTFOLIO</h2>
+                <h2 className="text-2xl md:text-4xl font-serif font-bold text-cloud/20 tracking-tight">PORTFOLIO</h2>
             </div>
 
             <div ref={scrollerRef} className="flex h-full items-center pl-[10vw]">
@@ -111,7 +111,7 @@ export function ProjectScroller() {
                 ))}
 
                 <div className="flex-shrink-0 w-[50vw] flex flex-col justify-center items-center">
-                    <h3 className="text-4xl font-serif text-cloud/40 italic">And more to come...</h3>
+                    <h3 className="text-2xl md:text-3xl font-serif text-cloud/30 italic">And more to come...</h3>
                 </div>
             </div>
 

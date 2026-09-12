@@ -7,7 +7,7 @@ import { Mail, Github, Linkedin, Twitter, ArrowUpRight } from "lucide-react";
 const socialLinks = [
     { name: "GITHUB", icon: <Github className="w-5 h-5" />, href: "https://github.com/Theprogrammingprince" },
     { name: "EMAIL", icon: <Mail className="w-5 h-5" />, href: "mailto:eragbele.paul@gmail.com" },
-    { name: "LINKEDIN", icon: <Linkedin className="w-5 h-5" />, href: "https://linkedin.com" },
+    { name: "LINKEDIN", icon: <Linkedin className="w-5 h-5" />, href: "https://linkedin.com/in/prince-paul-a6474b238" },
     { name: "X", icon: <Twitter className="w-5 h-5" />, href: "https://x.com" },
 ];
 
@@ -29,11 +29,11 @@ export function Contact() {
                     </motion.span>
 
                     <motion.h2
-                        initial={{ opacity: 0, scale: 0.9 }}
+                        initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="text-5xl md:text-8xl lg:text-9xl font-serif font-black text-cloud tracking-tighter mb-16 leading-tight"
+                        className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-cloud tracking-tight mb-12 leading-tight"
                     >
                         READY TO BUILD <br /> THE <span className="text-accent-gold italic">FUTURE?</span>
                     </motion.h2>

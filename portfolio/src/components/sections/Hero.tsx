@@ -5,7 +5,8 @@ import { useState, useEffect } from "react";
 import { MorphingText } from "@/components/ui/morphing-text";
 import { OrbitingTechStack } from "../ui/OrbitingTechStack";
 import { MagneticButton } from "../ui/MagneticButton";
-import { Download, ArrowRight } from "lucide-react";
+import { Eye, ArrowRight } from "lucide-react";
+import { CvModal } from "../ui/CvModal";
 
 const hellos = [
     "Hello", "Bonjour", "Hola", "Ciao", "Olá", "Hallo", "Konnichiwa"
@@ -20,6 +21,7 @@ const roles = [
 
 export function Hero() {
     const [helloIndex, setHelloIndex] = useState(0);
+    const [isCvOpen, setIsCvOpen] = useState(false);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -50,12 +52,12 @@ export function Hero() {
                 <div className="relative w-full flex flex-col items-center justify-center">
 
                     {/* Text Layer (Behind) */}
-                    <div className="absolute inset-0 z-0 flex flex-col items-center justify-center pointer-events-none opacity-20 md:opacity-40 select-none">
+                    <div className="absolute inset-0 z-0 flex flex-col items-center justify-center pointer-events-none opacity-10 md:opacity-20 select-none">
                         <motion.h1
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 1.5, delay: 0.2 }}
-                            className="text-[11vw] font-heading font-black text-white/20 tracking-tighter whitespace-nowrap leading-none uppercase"
+                            className="text-[8vw] font-heading font-black text-white/20 tracking-tight whitespace-nowrap leading-none uppercase"
                         >
                             PAUL PRINCE
                         </motion.h1>
@@ -70,7 +72,7 @@ export function Hero() {
                                 initial={{ opacity: 0, x: -30 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.8, delay: 0.4 }}
-                                className="text-xl md:text-2xl font-sans text-cloud/80 mb-2 font-medium"
+                                className="text-lg md:text-xl font-sans text-cloud/80 mb-2 font-medium"
                             >
                                 Hey, I am
                             </motion.h2>
@@ -78,17 +80,17 @@ export function Hero() {
                                 initial={{ opacity: 0, x: -30 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.8, delay: 0.6 }}
-                                className="text-6xl md:text-8xl lg:text-9xl font-heading font-black text-cloud tracking-tight mb-4 drop-shadow-2xl uppercase"
+                                className="text-4xl sm:text-6xl lg:text-7xl font-heading font-black text-cloud tracking-tight mb-3 drop-shadow-xl uppercase"
                             >
                                 PAUL PRINCE
                             </motion.h1>
 
-                            <div className="h-24 md:h-32 mb-16 flex items-center justify-center lg:justify-start">
-                                <span className="text-lg md:text-xl font-mono text-cloud/90 block mr-4 tracking-widest uppercase font-bold self-start mt-2">A</span>
+                            <div className="h-16 md:h-20 mb-10 flex items-center justify-center lg:justify-start">
+                                <span className="text-base md:text-lg font-mono text-cloud/80 block mr-3 tracking-widest uppercase font-bold self-start mt-1">A</span>
                                 <div className="w-full max-w-lg">
                                     <MorphingText
                                         texts={roles}
-                                        className="font-heading font-extrabold italic text-ivory tracking-tight text-3xl md:text-5xl lg:text-6xl text-left lg:text-left !leading-normal"
+                                        className="font-heading font-bold italic text-ivory tracking-tight text-xl sm:text-3xl lg:text-4xl text-left lg:text-left !leading-normal"
                                     />
                                 </div>
                             </div>
@@ -100,10 +102,10 @@ export function Hero() {
                                 className="flex flex-col sm:flex-row items-center gap-6"
                             >
                                 <MagneticButton
-                                    className="group relative px-8 py-4 bg-accent-gold text-charcoal-dark font-bold rounded-full overflow-hidden flex items-center gap-2 hover:shadow-[0_0_40px_rgba(226,184,83,0.6)] transition-all active:scale-95"
-                                    onClick={() => window.open('/cv.pdf', '_blank')}
+                                    className="group relative px-8 py-4 bg-accent-gold text-charcoal-dark font-bold rounded-full overflow-hidden flex items-center gap-2 hover:shadow-[0_0_40px_rgba(226,184,83,0.6)] transition-all active:scale-95 cursor-pointer"
+                                    onClick={() => setIsCvOpen(true)}
                                 >
-                                    DOWNLOAD CV <Download className="w-4 h-4" />
+                                    VIEW CV <Eye className="w-4 h-4" />
                                     <motion.div
                                         className="absolute inset-0 bg-white/20 -translate-x-full group-hover:translate-x-0 transition-transform duration-500"
                                     />

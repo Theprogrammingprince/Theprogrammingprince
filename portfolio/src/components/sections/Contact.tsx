@@ -5,10 +5,10 @@ import { MagneticButton } from "../ui/MagneticButton";
 import { Mail, Github, Linkedin, Twitter, ArrowUpRight } from "lucide-react";
 
 const socialLinks = [
-    { name: "LINKEDIN", icon: <Linkedin className="w-5 h-5" />, href: "#" },
     { name: "GITHUB", icon: <Github className="w-5 h-5" />, href: "https://github.com/Theprogrammingprince" },
-    { name: "X", icon: <Twitter className="w-5 h-5" />, href: "#" },
     { name: "EMAIL", icon: <Mail className="w-5 h-5" />, href: "mailto:eragbele.paul@gmail.com" },
+    { name: "LINKEDIN", icon: <Linkedin className="w-5 h-5" />, href: "https://linkedin.com" },
+    { name: "X", icon: <Twitter className="w-5 h-5" />, href: "https://x.com" },
 ];
 
 export function Contact() {
@@ -43,16 +43,23 @@ export function Contact() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
-                        className="flex flex-col md:flex-row gap-8 items-center justify-center mb-24"
+                        className="flex flex-col md:flex-row gap-8 items-center justify-center mb-8"
                     >
-                        <MagneticButton className="px-12 py-6 bg-accent-gold text-charcoal-dark font-bold rounded-full text-xl flex items-center gap-3 hover:shadow-[0_0_40px_rgba(226, 184, 83, 0.6)] transition-all">
-                            START A PROJECT <Mail className="w-6 h-6" />
-                        </MagneticButton>
+                        <a href="mailto:eragbele.paul@gmail.com" className="outline-none">
+                            <MagneticButton className="px-12 py-6 bg-accent-gold text-charcoal-dark font-bold rounded-full text-xl flex items-center gap-3 hover:shadow-[0_0_40px_rgba(226,184,83,0.6)] transition-all cursor-pointer">
+                                START A PROJECT <Mail className="w-6 h-6" />
+                            </MagneticButton>
+                        </a>
 
-                        <a href="mailto:paul@example.com" className="text-cloud/60 hover:text-accent-gold transition-colors font-mono text-lg underline underline-offset-8 decoration-accent-gold/30">
-                            paul.prince@engineer.com
+                        <a href="mailto:eragbele.paul@gmail.com" className="text-cloud/80 hover:text-accent-gold transition-colors font-mono text-lg underline underline-offset-8 decoration-accent-gold/30">
+                            eragbele.paul@gmail.com
                         </a>
                     </motion.div>
+
+                    <p className="text-xs font-mono text-cloud/50 tracking-widest uppercase mb-16 flex items-center justify-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                        Abuja, Nigeria • Open to Remote Roles Worldwide
+                    </p>
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-4xl">
                         {socialLinks.map((link, index) => (

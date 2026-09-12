@@ -7,6 +7,10 @@ const ShootingStarEffect = () => {
     const containerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
+        if (typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches) {
+            return;
+        }
+
         const container = containerRef.current;
         if (!container) return;
 

@@ -13,9 +13,9 @@ const hellos = [
 
 const roles = [
     "FULLSTACK DEVELOPER",
-    "UI/UX SPECIALIST",
-    "CREATIVE ENGINEER",
-    "SYSTEM ARCHITECT"
+    "SOFTWARE DEVELOPER",
+    "BACKEND & API ENGINEER",
+    "CREATIVE WRITER"
 ];
 
 export function Hero() {
@@ -109,8 +109,13 @@ export function Hero() {
                                     />
                                 </MagneticButton>
 
-                                <button className="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-cloud/70 hover:text-accent-gold transition-colors group">
-                                    EXPLORE UNIVERSE <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
+                                <button 
+                                    onClick={() => {
+                                        document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+                                    }}
+                                    className="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-cloud/70 hover:text-accent-gold transition-colors group cursor-pointer"
+                                >
+                                    FEATURED WORK <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
                                 </button>
                             </motion.div>
                         </div>

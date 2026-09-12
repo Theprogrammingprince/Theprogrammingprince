@@ -12,8 +12,15 @@ export function CursorFollower() {
     const cursorY = useSpring(mouseY, springConfig);
 
     const [isHovering, setIsHovering] = useState(false);
+    const [isTouchDevice, setIsTouchDevice] = useState(true);
 
     useEffect(() => {
+        if (typeof window !== "undefined") {
+            const isTouch = window.matchMedia("(pointer: coarse)").matches;
+            setIsTouchDevice(isTouch);
+            if (isTouch) return;
+        }
+
         const handleMouseMove = (e: MouseEvent) => {
             mouseX.set(e.clientX - 16);
             mouseY.set(e.clientY - 16);
@@ -35,6 +42,8 @@ export function CursorFollower() {
             window.removeEventListener("mouseover", handleMouseOver);
         };
     }, [mouseX, mouseY]);
+
+    if (isTouchDevice) return null;
 
     return (
         <motion.div

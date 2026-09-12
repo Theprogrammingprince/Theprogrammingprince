@@ -7,10 +7,31 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const milestones = [
-    { year: "2017", title: "THE GENESIS", description: "Started as a junior designer, mastering the foundations of the web." },
-    { year: "2018", title: "HARDWARE INTERN", description: "Started as a hardware intern, understading the inner workings of a computer." },
-    { year: "2022", title: "MODERN MASTERY", description: "Architecting complex SPAs and high-end design systems for enterprise." },
-    { year: "2024", title: "STARTED PERSONAL PROJECTS", description: "Started working on personal projects, building a portfolio and learning new technologies." },
+    {
+        year: "2018",
+        title: "SYSTEMS & HARDWARE",
+        description: "Hardware & technical support intern at Microchips System. Diagnosed low-level machine architecture and built an enduring instinct for systems-level debugging."
+    },
+    {
+        year: "2020",
+        title: "THE SOFTWARE GENESIS",
+        description: "Commenced dedicated software engineering journey. Dove deep into web architecture, JavaScript, Python, DOM manipulation, and core programming paradigms."
+    },
+    {
+        year: "2022",
+        title: "FULL-STACK ARCHITECTURE",
+        description: "Advanced into modern full-stack systems. Mastered React, TypeScript, relational databases, RESTful APIs, and state management patterns."
+    },
+    {
+        year: "2024",
+        title: "ACADEMIC & PROFESSIONAL IMMERSION",
+        description: "Pursuing B.Sc. Computer Science (NOUN) alongside software development internship at Outsource Global (Qwasar Programme) — remote Agile delivery, strict Git workflows, and collaborative engineering."
+    },
+    {
+        year: "2025+",
+        title: "SHIPPING PRODUCTION PLATFORMS",
+        description: "Architecting and deploying live, scalable web platforms: Harzock Hotel PMS (PostgreSQL & inventory), Bailout.ng (fintech capital access with Supabase Edge), HealthChain, and NexaEdu LMS."
+    },
 ];
 
 export function ProcessTimeline() {
@@ -19,11 +40,15 @@ export function ProcessTimeline() {
 
     useEffect(() => {
         let ctx = gsap.context(() => {
-            gsap.to(lineRef.current, {
+            const line = lineRef.current;
+            const container = containerRef.current;
+            if (!line || !container) return;
+
+            gsap.to(line, {
                 height: "100%",
                 ease: "none",
                 scrollTrigger: {
-                    trigger: containerRef.current,
+                    trigger: container,
                     start: "top center",
                     end: "bottom center",
                     scrub: true,
@@ -52,7 +77,7 @@ export function ProcessTimeline() {
         <section ref={containerRef} className="relative py-48 px-6 bg-charcoal-dark min-h-screen">
             <div className="max-w-4xl mx-auto relative">
                 <h2 className="text-4xl md:text-7xl font-serif font-black text-cloud text-center mb-32 tracking-tighter uppercase whitespace-nowrap">
-                    <span className="text-accent-gold/70">5 YEARS</span> OF ENGINEERING
+                    <span className="text-accent-gold/70">5+ YEARS</span> OF BUILDING
                 </h2>
 
                 {/* Vertical Line Container */}

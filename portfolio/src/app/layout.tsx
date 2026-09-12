@@ -18,8 +18,15 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Creative Developer | Neo-Deco Portfolio",
-  description: "High-performance professional portfolio with Neo-Deco aesthetics.",
+  title: "Paul Prince | Full-Stack Software Developer",
+  description: "Full-stack software developer building scalable web systems across hospitality, fintech, healthcare, and education with React, Next.js, TypeScript, PostgreSQL, and Supabase.",
+  keywords: ["Paul Prince", "Full-Stack Developer", "Software Engineer", "React", "Next.js", "TypeScript", "PostgreSQL", "Supabase", "Abuja", "Nigeria"],
+  authors: [{ name: "Paul Prince" }],
+  openGraph: {
+    title: "Paul Prince | Full-Stack Software Developer",
+    description: "Full-stack developer building scalable web applications with React, Next.js, PostgreSQL, and Supabase.",
+    type: "website",
+  },
 };
 
 import ShootingStarEffect from "@/components/ui/ShootingStarEffect";

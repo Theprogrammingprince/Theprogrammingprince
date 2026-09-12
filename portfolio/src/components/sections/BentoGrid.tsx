@@ -3,12 +3,12 @@
 import { motion } from "framer-motion";
 
 const skills = [
-    { name: "React / Next.js", level: "Expert", category: "Frameworks" },
-    { name: "TypeScript", level: "Advanced", category: "Languages" },
-    { name: "GSAP / Framer Motion", level: "Senior", category: "Animations" },
-    { name: "Tailwind CSS", level: "Master", category: "Styling" },
-    { name: "Three.js / WebGL", level: "Deep", category: "3D Graphics" },
-    { name: "UI/UX Strategy", level: "Veteran", category: "Design" },
+    { name: "React 18 & Next.js", level: "Expert", category: "Frontend Architecture" },
+    { name: "TypeScript", level: "Advanced", category: "Type Systems" },
+    { name: "PostgreSQL & Supabase", level: "Advanced", category: "Databases & Cloud" },
+    { name: "TanStack React Query", level: "Proficient", category: "Server-State & Data" },
+    { name: "REST APIs & Python", level: "Advanced", category: "Backend Services" },
+    { name: "Vitest & Testing Library", level: "Proficient", category: "Automated Testing" },
 ];
 
 export function BentoGrid() {
@@ -22,7 +22,7 @@ export function BentoGrid() {
                     className="mb-16"
                 >
                     <h2 className="text-4xl md:text-6xl font-serif font-bold text-cloud mb-4">EXPERIENCE MATRIX</h2>
-                    <p className="text-foreground/60 font-mono text-sm tracking-widest uppercase">The architectural foundation of 5+ years.</p>
+                    <p className="text-foreground/60 font-mono text-sm tracking-widest uppercase">Production-grade engineering stack powering live web systems.</p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px]">

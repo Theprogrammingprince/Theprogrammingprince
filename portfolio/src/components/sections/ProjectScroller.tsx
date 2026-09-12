@@ -9,28 +9,45 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
     {
-        title: "THESIS PEN",
-        category: "ACADEMIC WRITING & RESEARCH / SaaS",
-        image: "/thesispen.jpg",
-        link: "https://thesispen.com"
+        title: "HARZOCK HOTEL",
+        category: "HOTEL MANAGEMENT SYSTEM / FULL-STACK",
+        description: "Full-stack hotel platform managing room bookings, food ordering, and real-time inventory tracking with PostgreSQL.",
+        tech: ["React", "TypeScript", "PostgreSQL", "REST APIs", "Tailwind CSS"],
+        image: "/harzock.png",
+        link: "https://harzockhotel.com",
+        isFlagship: true,
     },
     {
-        title: "NEXA EDU",
-        category: "EDTECH SOLUTIONS / LEARNING MANAGEMENT",
-        image: "/nexa.jpg",
-        link: "https://nexaedu.ng"
+        title: "BAILOUT",
+        category: "FINTECH & MSME CAPITAL ACCESS",
+        description: "Digital financial access platform enabling Nigerian MSMEs to discover, evaluate, and pursue vetted loans, grants, and growth advisory.",
+        tech: ["React 18", "TypeScript", "TanStack Query", "Supabase Edge", "Vitest", "Tailwind"],
+        image: "/bailout.png",
+        link: "https://bailout.ng",
     },
     {
         title: "HEALTH CHAIN",
-        category: "HEALTHCARE BLOCKCHAIN / WEB3 INFRASTRUCTURE",
+        category: "CRITICAL HEALTHCARE RECORDS",
+        description: "Emergency medical records platform integrated with Supabase for instant, secure access to time-sensitive patient data.",
+        tech: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS"],
         image: "/healthchain.jpg",
-        link: "https://healthchainofficial.com"
+        link: "https://healthchainofficial.com",
     },
     {
-        title: "HARZOCK HOTEL",
-        category: "HOTEL MANAGEMENT SYSTEM",
-        image: "/harzock.jpg",
-        link: "https://herzokhotel.vercel.app"
+        title: "NEXA EDU",
+        category: "EDTECH / LEARNING MANAGEMENT",
+        description: "Accessible, responsive learning platform engineered for NOUN students to streamline access to academic course content.",
+        tech: ["React", "TypeScript", "Accessible UX", "Tailwind CSS"],
+        image: "/nexa.jpg",
+        link: "https://nexaedu.ng",
+    },
+    {
+        title: "THESIS PEN",
+        category: "AI ACADEMIC RESEARCH & SAAS",
+        description: "AI-assisted academic writing platform delivering structured research workflows, citation assistance, and clean user interfaces.",
+        tech: ["React", "TypeScript", "AI Integration", "Tailwind CSS"],
+        image: "/thesispen.jpg",
+        link: "https://thesispen.com",
     },
 ];
 
@@ -79,7 +96,7 @@ export function ProjectScroller() {
     }, []);
 
     return (
-        <section ref={containerRef} className="relative h-screen overflow-hidden bg-charcoal-default">
+        <section ref={containerRef} id="projects" className="relative h-screen overflow-hidden bg-charcoal-default">
             <div className="absolute top-24 left-24 z-10">
                 <h2 className="text-4xl md:text-6xl font-serif font-black text-cloud/20 tracking-tighter">PORTFOLIO</h2>
             </div>
